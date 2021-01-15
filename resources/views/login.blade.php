@@ -42,7 +42,7 @@
                             <span class="fas fa-lock"></span>
                           </div>
                         </div>
-                      </div> 
+                      </div>
                       <div class="row">
                         <div class="col-12 clearfix">
                           <a href="#" class="float-left">Lupa kata laluan?</a>

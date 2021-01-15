@@ -1,6 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+.card{
+  opacity:0.3;
+  background-color:orange;
+}
+
+.card p{
+  opacity:none;
+}
+</style>
+
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -23,23 +35,23 @@
               <div class="col-lg-3">
                 <div class="card">
                   <div class="card-header">
-                    <h5 class="card-title m-0">Pengumuman</h5>
+                    <h5 class="card-title m-0"><span style="color:#FFE802;">Pengumuman</span></h5>
                   </div>
                   <div class="card-body">
-                    1 JAN 2021 <br><br>
-                    Makluman: <br>
-                    Selamat tahun baru kepada semua pengguna MyGeo Explorer <br><br>
-                    25 DIS 2020 <br><br>
-                    Peringatan: <br>
-                    Agensi hendaklah mengemaskini metadata masing-masing <br><br>
-                    23 DIS 2020 <br><br>
-                    Metadata Baharu: <br>
-                    Grid for Climate Change Projection for Peninsular Malaysia <br><br>
-                    21 DIS 2020 <br><br>
-                    Pengemaskinian: <br>
-                    Climate Change Projection for Peninsular Malaysia (2010-2099) <br><br>
-                    18 DIS 2020 <br><br>
-                    Metadata Baharu: Taman Laut Negeri Terengganu <br>
+                    <span style="color:#FFE802;">1 JAN 2021</span>
+                    <p>Makluman: <br>
+                    Selamat tahun baru kepada semua pengguna MyGeo Explorer</p>
+                    <span style="color:#FFE802;">25 DIS 2020</span>
+                    <p>Peringatan: <br>
+                    Agensi hendaklah mengemaskini metadata masing-masing</p>
+                    <span style="color:#FFE802;">23 DIS 2020</span>
+                    <p>Metadata Baharu: <br>
+                    Grid for Climate Change Projection for Peninsular Malaysia</p>
+                    <span style="color:#FFE802;">21 DIS 2020</span>
+                    <p>Pengemaskinian: <br>
+                    Climate Change Projection for Peninsular Malaysia (2010-2099)</p>
+                    <span style="color:#FFE802;">18 DIS 2020</span>
+                    <p>Metadata Baharu: Taman Laut Negeri Terengganu</p> <br>
                   </div>
                 </div>
               </div>

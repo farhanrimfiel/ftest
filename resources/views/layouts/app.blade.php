@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="background: {{ asset('dist/img/global.png') }};">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,6 +34,25 @@
             }
              
             #calculated-area{}
+
+            .content-wrapper{
+              background: url('{{ asset("dist/img/global.png") }}') 65% 3% no-repeat;
+            }
+
+            .main-footer{
+              background: #0A80B6;
+              border-top: none;
+              color: white;
+              font-weight: 200;
+            }
+
+            .main-header {
+              border-bottom: none;
+            }
+
+            .card {
+              opacity: 0.7;
+            }
      </style>
       
     </head>
@@ -87,9 +106,15 @@
             <!-- Footer -->
             <footer class="main-footer">
                 <!-- To the right -->
-                <div class="float-right d-none d-sm-inline"></div>
+                <div class="float-right d-none d-sm-inline" style="text-align: right;">
+                  Sebarang pertanyaan, boleh menghubungi: <br><br>
+                  <i class="fas fa-envelope"></i> adminexplorer@ketsa.gov.my <br>
+                  Masa Operasi: 8.00 Pagi - 5.00 Petang
+                </div>
                 <!-- Default to the left -->
-                <strong>Copyright &copy; 2021 Ketsa Geo by Pipeline.</strong>
+                Penafian | Penyataan Privasi <br>
+                Hakcipta Terpelihara © 2021. Pusat Geospatial Negara. <br><br>
+                Jumlah Pelawat: <span style="color:#FFE802;">1,098,034</span>
             </footer>
         </div>
 
