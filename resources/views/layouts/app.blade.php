@@ -50,8 +50,8 @@
               border-bottom: none;
             }
 
-            .card {
-              opacity: 0.7;
+            .card { 
+              background-color: rgba(255, 255, 255, 0.9);
             }
      </style>
       

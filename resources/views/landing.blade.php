@@ -4,12 +4,18 @@
 
 <style>
 .card{
-  opacity:0.3;
-  background-color:orange;
+  /*opacity:0.3;
+  background-color:orange;*/
+  background-color: rgba(255, 236, 179, 0.2);
 }
 
 .card p{
   opacity:none;
+}
+
+.card a{
+  opacity:none;
+  color:#FFE802;
 }
 </style>
 
