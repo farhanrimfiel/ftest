@@ -53,7 +53,7 @@
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', //hosted style id
         center: [101.68,2.91], // starting position
-        zoom: 11 // starting zoom
+        zoom: 0 // starting zoom
     });
  
     var draw = new MapboxDraw({
@@ -66,6 +66,12 @@
 
     var langlat = []; //coordinates of the user created polygon. currently unused.
 
+    map.addControl(
+      new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl
+      })
+    );
     map.addControl(draw);
     map.addControl(new mapboxgl.FullscreenControl());
     map.addControl(new mapboxgl.NavigationControl());
@@ -75,6 +81,7 @@
     map.on('click', function (e) {
       langlat.push(JSON.stringify(e.lngLat.wrap()));
     });
+
 
 
 
@@ -154,7 +161,7 @@
         'source': 'ftest',
         'layout': {},
         'paint': {
-          'fill-color': '#088',
+          'fill-color': 'rgba(128, 255, 0,0.9)',
           'fill-opacity': 0.6
         }
       });
