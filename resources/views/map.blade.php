@@ -114,10 +114,23 @@
       }
     });
 
+    
+    
+    $(document).ready(function(){
+      $('.mapbox-gl-draw_ctrl-draw-btn.mapbox-gl-draw_trash').click(function(){ 
+        //delete any existing drawings
+        var mapLayer = map.getLayer('ftest');
+        if(typeof mapLayer !== 'undefined') {
+            map.removeLayer('ftest').removeSource('ftest');
+        }
+      });
+    });
+    
+
+
     //user submitted coordinates
     $(document).on('click','#btn_set_area',function(){
       //delete any existing drawings
-      $(".mapbox-gl-draw_trash").click();
       var mapLayer = map.getLayer('ftest');
       if(typeof mapLayer !== 'undefined') {
           map.removeLayer('ftest').removeSource('ftest');
